@@ -12,5 +12,8 @@
 #import "NSArray+XSLog.h"
 #import "NSAttributedString+XSAdditions.h"
 #import "NSObject+XSRuntime.h"
+#import "NSString+XSAdditions.h"
+#import "UIButton+XSAdditions.h"
+#import "UIColor+XSAdditions.h"
 
 #endif 
