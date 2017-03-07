@@ -25,6 +25,7 @@
 		18E6EB431E6E7E47003AFADF /* UIScreen+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EB421E6E7E47003AFADF /* UIScreen+XSAdditions.m */; };
 		18E6EB461E6E7E86003AFADF /* UIView+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EB451E6E7E86003AFADF /* UIView+XSAdditions.m */; };
 		18E6EB491E6E7ED8003AFADF /* UIViewController+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EB481E6E7ED8003AFADF /* UIViewController+XSAdditions.m */; };
+		18E6EB4C1E6E7F7C003AFADF /* NSString+STRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EB4B1E6E7F7C003AFADF /* NSString+STRegex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,8 @@
 		18E6EB451E6E7E86003AFADF /* UIView+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XSAdditions.m"; sourceTree = "<group>"; };
 		18E6EB471E6E7ED8003AFADF /* UIViewController+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XSAdditions.h"; sourceTree = "<group>"; };
 		18E6EB481E6E7ED8003AFADF /* UIViewController+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XSAdditions.m"; sourceTree = "<group>"; };
+		18E6EB4A1E6E7F7C003AFADF /* NSString+STRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+STRegex.h"; sourceTree = "<group>"; };
+		18E6EB4B1E6E7F7C003AFADF /* NSString+STRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+STRegex.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				18E6EB451E6E7E86003AFADF /* UIView+XSAdditions.m */,
 				18E6EB471E6E7ED8003AFADF /* UIViewController+XSAdditions.h */,
 				18E6EB481E6E7ED8003AFADF /* UIViewController+XSAdditions.m */,
+				18E6EB4A1E6E7F7C003AFADF /* NSString+STRegex.h */,
+				18E6EB4B1E6E7F7C003AFADF /* NSString+STRegex.m */,
 			);
 			path = XSAdditions;
 			sourceTree = SOURCE_ROOT;
@@ -222,6 +227,7 @@
 			files = (
 				18E6EB431E6E7E47003AFADF /* UIScreen+XSAdditions.m in Sources */,
 				18E6EAEE1E6E5F54003AFADF /* UIButton+XSAdditions.m in Sources */,
+				18E6EB4C1E6E7F7C003AFADF /* NSString+STRegex.m in Sources */,
 				18E6EACA1E6E4FC9003AFADF /* ViewController.m in Sources */,
 				18E6EAC71E6E4FC9003AFADF /* AppDelegate.m in Sources */,
 				18E6EB3D1E6E7CF2003AFADF /* UIImage+XSAdditions.m in Sources */,
