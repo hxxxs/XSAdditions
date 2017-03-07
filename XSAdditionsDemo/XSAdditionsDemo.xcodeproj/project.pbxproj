@@ -19,6 +19,7 @@
 		18E6EAEB1E6E5D3A003AFADF /* NSString+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAEA1E6E5D3A003AFADF /* NSString+XSAdditions.m */; };
 		18E6EAEE1E6E5F54003AFADF /* UIButton+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAED1E6E5F54003AFADF /* UIButton+XSAdditions.m */; };
 		18E6EAF11E6E604A003AFADF /* UIColor+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAF01E6E604A003AFADF /* UIColor+XSAdditions.m */; };
+		18E6EB3A1E6E7B3E003AFADF /* UIBarButtonItem+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EB391E6E7B3E003AFADF /* UIBarButtonItem+XSAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		18E6EAED1E6E5F54003AFADF /* UIButton+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XSAdditions.m"; sourceTree = "<group>"; };
 		18E6EAEF1E6E604A003AFADF /* UIColor+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XSAdditions.h"; sourceTree = "<group>"; };
 		18E6EAF01E6E604A003AFADF /* UIColor+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XSAdditions.m"; sourceTree = "<group>"; };
+		18E6EB381E6E7B3E003AFADF /* UIBarButtonItem+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XSAdditions.h"; sourceTree = "<group>"; };
+		18E6EB391E6E7B3E003AFADF /* UIBarButtonItem+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XSAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				18E6EAED1E6E5F54003AFADF /* UIButton+XSAdditions.m */,
 				18E6EAEF1E6E604A003AFADF /* UIColor+XSAdditions.h */,
 				18E6EAF01E6E604A003AFADF /* UIColor+XSAdditions.m */,
+				18E6EB381E6E7B3E003AFADF /* UIBarButtonItem+XSAdditions.h */,
+				18E6EB391E6E7B3E003AFADF /* UIBarButtonItem+XSAdditions.m */,
 			);
 			path = XSAdditions;
 			sourceTree = SOURCE_ROOT;
@@ -195,6 +200,7 @@
 				18E6EAC71E6E4FC9003AFADF /* AppDelegate.m in Sources */,
 				18E6EAE21E6E5399003AFADF /* NSArray+XSLog.m in Sources */,
 				18E6EAF11E6E604A003AFADF /* UIColor+XSAdditions.m in Sources */,
+				18E6EB3A1E6E7B3E003AFADF /* UIBarButtonItem+XSAdditions.m in Sources */,
 				18E6EAE51E6E5BE5003AFADF /* NSAttributedString+XSAdditions.m in Sources */,
 				18E6EAC41E6E4FC9003AFADF /* main.m in Sources */,
 				18E6EAEB1E6E5D3A003AFADF /* NSString+XSAdditions.m in Sources */,
