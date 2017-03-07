@@ -10,5 +10,7 @@
 #define XSAdditions_h
 
 #import "NSArray+XSLog.h"
+#import "NSAttributedString+XSAdditions.h"
+#import "NSObject+XSRuntime.h"
 
 #endif 
