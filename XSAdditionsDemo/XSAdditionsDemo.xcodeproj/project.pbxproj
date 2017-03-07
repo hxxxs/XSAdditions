@@ -17,6 +17,7 @@
 		18E6EAE51E6E5BE5003AFADF /* NSAttributedString+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAE41E6E5BE5003AFADF /* NSAttributedString+XSAdditions.m */; };
 		18E6EAE81E6E5C44003AFADF /* NSObject+XSRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAE71E6E5C44003AFADF /* NSObject+XSRuntime.m */; };
 		18E6EAEB1E6E5D3A003AFADF /* NSString+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAEA1E6E5D3A003AFADF /* NSString+XSAdditions.m */; };
+		18E6EAEE1E6E5F54003AFADF /* UIButton+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAED1E6E5F54003AFADF /* UIButton+XSAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		18E6EAE71E6E5C44003AFADF /* NSObject+XSRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XSRuntime.m"; sourceTree = "<group>"; };
 		18E6EAE91E6E5D3A003AFADF /* NSString+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XSAdditions.h"; sourceTree = "<group>"; };
 		18E6EAEA1E6E5D3A003AFADF /* NSString+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XSAdditions.m"; sourceTree = "<group>"; };
+		18E6EAEC1E6E5F54003AFADF /* UIButton+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XSAdditions.h"; sourceTree = "<group>"; };
+		18E6EAED1E6E5F54003AFADF /* UIButton+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XSAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				18E6EAE71E6E5C44003AFADF /* NSObject+XSRuntime.m */,
 				18E6EAE91E6E5D3A003AFADF /* NSString+XSAdditions.h */,
 				18E6EAEA1E6E5D3A003AFADF /* NSString+XSAdditions.m */,
+				18E6EAEC1E6E5F54003AFADF /* UIButton+XSAdditions.h */,
+				18E6EAED1E6E5F54003AFADF /* UIButton+XSAdditions.m */,
 			);
 			path = XSAdditions;
 			sourceTree = SOURCE_ROOT;
@@ -180,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E6EAEE1E6E5F54003AFADF /* UIButton+XSAdditions.m in Sources */,
 				18E6EACA1E6E4FC9003AFADF /* ViewController.m in Sources */,
 				18E6EAC71E6E4FC9003AFADF /* AppDelegate.m in Sources */,
 				18E6EAE21E6E5399003AFADF /* NSArray+XSLog.m in Sources */,
