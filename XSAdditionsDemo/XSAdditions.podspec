@@ -2,8 +2,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "XSAdditions"
-  s.version      = "0.0.2"
-  s.summary      = "Foundation框架常用类拓展（持续更新）"
+  s.version      = "0.0.3"
+  s.summary      = "XSAdditions is class additions"
   s.homepage     = "https://github.com/cedarYellow/XSAdditions"
   s.license      = "MIT"
   s.author             = { "Cedar" => "lychae@foxmail.com" }
