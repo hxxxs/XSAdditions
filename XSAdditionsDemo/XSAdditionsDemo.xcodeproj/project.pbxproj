@@ -13,6 +13,7 @@
 		18E6EACD1E6E4FC9003AFADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6EACB1E6E4FC9003AFADF /* Main.storyboard */; };
 		18E6EACF1E6E4FC9003AFADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E6EACE1E6E4FC9003AFADF /* Assets.xcassets */; };
 		18E6EAD21E6E4FC9003AFADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6EAD01E6E4FC9003AFADF /* LaunchScreen.storyboard */; };
+		18E6EADC1E6E5058003AFADF /* NSArray+XSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EADB1E6E5058003AFADF /* NSArray+XSLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		18E6EACE1E6E4FC9003AFADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E6EAD11E6E4FC9003AFADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18E6EAD31E6E4FC9003AFADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E6EADA1E6E5058003AFADF /* NSArray+XSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XSLog.h"; sourceTree = "<group>"; };
+		18E6EADB1E6E5058003AFADF /* NSArray+XSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+XSLog.m"; sourceTree = "<group>"; };
+		18E6EADD1E6E50A9003AFADF /* XSAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XSAdditions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		18E6EAC11E6E4FC9003AFADF /* XSAdditionsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18E6EAD91E6E4FE6003AFADF /* XSAdditions */,
 				18E6EAC51E6E4FC9003AFADF /* AppDelegate.h */,
 				18E6EAC61E6E4FC9003AFADF /* AppDelegate.m */,
 				18E6EAC81E6E4FC9003AFADF /* ViewController.h */,
@@ -77,6 +82,17 @@
 				18E6EAC31E6E4FC9003AFADF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E6EAD91E6E4FE6003AFADF /* XSAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				18E6EADD1E6E50A9003AFADF /* XSAdditions.h */,
+				18E6EADA1E6E5058003AFADF /* NSArray+XSLog.h */,
+				18E6EADB1E6E5058003AFADF /* NSArray+XSLog.m */,
+			);
+			name = XSAdditions;
+			path = ../../XSAdditions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +168,7 @@
 			files = (
 				18E6EACA1E6E4FC9003AFADF /* ViewController.m in Sources */,
 				18E6EAC71E6E4FC9003AFADF /* AppDelegate.m in Sources */,
+				18E6EADC1E6E5058003AFADF /* NSArray+XSLog.m in Sources */,
 				18E6EAC41E6E4FC9003AFADF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +324,7 @@
 				18E6EAD81E6E4FC9003AFADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
