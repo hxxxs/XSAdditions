@@ -25,8 +25,10 @@
     
     if (isBack) {
         
-        [btn setImage:[UIImage imageNamed:@"navigationbar_back_withtext"] forState:UIControlStateNormal];
-        [btn setImage:[UIImage imageNamed:@"navigationbar_back_withtext_highlighted"] forState:UIControlStateHighlighted];
+        NSString *path = [NSString stringWithFormat:@"%@/XSAdditions.bundle", [NSBundle mainBundle].resourcePath];
+        NSBundle *bundle = [NSBundle bundleWithPath:path];
+        NSString *normalImagePath = [bundle pathForResource:@"navigationbar_back_withtext" ofType:@"png" inDirectory:@"Images"];
+        [btn setImage:[UIImage imageWithContentsOfFile:normalImagePath] forState:UIControlStateNormal];
         
         [btn sizeToFit];
     }
@@ -43,7 +45,7 @@
     
     return [self xs_itemWithTitle:title
                          fontSize:16
-                       titleColor:[UIColor whiteColor]
+                       titleColor:[UIColor blueColor]
                            target:target
                            action:action
                            isBack:isBack];

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XSAdditions.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem xs_itemWithTitle:@"返回" target:self action:@selector(clickBackBtn) isBack:YES];
+}
+
+- (void)clickBackBtn {
+    NSLog(@"111111111111");
 }
 
 

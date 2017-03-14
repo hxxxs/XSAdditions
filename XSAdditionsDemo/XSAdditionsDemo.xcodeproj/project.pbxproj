@@ -20,6 +20,7 @@
 		181A9AFD1E77C98F00DF8273 /* UIScreen+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AED1E77C98F00DF8273 /* UIScreen+XSAdditions.m */; };
 		181A9AFE1E77C98F00DF8273 /* UIView+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AEF1E77C98F00DF8273 /* UIView+XSAdditions.m */; };
 		181A9AFF1E77C98F00DF8273 /* UIViewController+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AF11E77C98F00DF8273 /* UIViewController+XSAdditions.m */; };
+		181A9B0B1E77D74F00DF8273 /* XSAdditions.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 181A9B0A1E77D74F00DF8273 /* XSAdditions.bundle */; };
 		18E6EAC41E6E4FC9003AFADF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAC31E6E4FC9003AFADF /* main.m */; };
 		18E6EAC71E6E4FC9003AFADF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAC61E6E4FC9003AFADF /* AppDelegate.m */; };
 		18E6EACA1E6E4FC9003AFADF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAC91E6E4FC9003AFADF /* ViewController.m */; };
@@ -56,6 +57,7 @@
 		181A9AF01E77C98F00DF8273 /* UIViewController+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XSAdditions.h"; sourceTree = "<group>"; };
 		181A9AF11E77C98F00DF8273 /* UIViewController+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XSAdditions.m"; sourceTree = "<group>"; };
 		181A9AF21E77C98F00DF8273 /* XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSAdditions.h; sourceTree = "<group>"; };
+		181A9B0A1E77D74F00DF8273 /* XSAdditions.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XSAdditions.bundle; sourceTree = "<group>"; };
 		18E6EABF1E6E4FC9003AFADF /* XSAdditionsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSAdditionsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E6EAC31E6E4FC9003AFADF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18E6EAC51E6E4FC9003AFADF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				181A9AF01E77C98F00DF8273 /* UIViewController+XSAdditions.h */,
 				181A9AF11E77C98F00DF8273 /* UIViewController+XSAdditions.m */,
 				181A9AF21E77C98F00DF8273 /* XSAdditions.h */,
+				181A9B0A1E77D74F00DF8273 /* XSAdditions.bundle */,
 			);
 			path = XSAdditions;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181A9B0B1E77D74F00DF8273 /* XSAdditions.bundle in Resources */,
 				18E6EAD21E6E4FC9003AFADF /* LaunchScreen.storyboard in Resources */,
 				18E6EACF1E6E4FC9003AFADF /* Assets.xcassets in Resources */,
 				18E6EACD1E6E4FC9003AFADF /* Main.storyboard in Resources */,
