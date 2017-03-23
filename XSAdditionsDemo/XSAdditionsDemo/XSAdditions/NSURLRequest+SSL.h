@@ -6,6 +6,12 @@
 //  Copyright © 2017年 Cedar. All rights reserved.
 //
 
+/*
+ 使用在控制器中添加如下代码
+ //  允许加载任何https请求
+ [NSURLRequest setAllowsAnyHTTPSCertificate:YES forHost:@"https"];
+ */
+
 #import <Foundation/Foundation.h>
 
 @interface NSURLRequest (SSL)

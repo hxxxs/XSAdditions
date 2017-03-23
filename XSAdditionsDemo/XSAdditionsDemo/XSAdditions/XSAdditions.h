@@ -22,5 +22,6 @@
 #import "UIView+XSAdditions.h"
 #import "UIViewController+XSAdditions.h"
 #import "NSString+STRegex.h"
+#import "NSURLRequest+SSL.h"
 
 #endif 
