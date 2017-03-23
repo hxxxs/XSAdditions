@@ -17,9 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    CGRect frame = CGRectMake(100, 100, 100, 100);
     
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem xs_itemWithTitle:@"返回" target:self action:@selector(clickBackBtn) isBack:YES];
+    UIImage *normalImage = [UIImage xs_dashImage:16 size:frame.size lineColor:[UIColor xs_colorWithHex:0x9d9d9d] lineWidth:1];
+    UIImage *selectedImage = [UIImage xs_imageWithColor:[UIColor xs_colorWithHex:0x2ea7e0] size:frame.size cornerRadius:16];
+
+    UIButton *btn = [UIButton xs_textButton:@"按钮" fontSize:15 normalColor:[UIColor xs_colorWithHex:0x9d9d9d] selectedColor:[UIColor whiteColor] normalImage:normalImage selectedImage:selectedImage];
+    btn.frame = frame;
+    [self.view addSubview:btn];
 }
 
 - (void)clickBackBtn {
