@@ -13,6 +13,11 @@
 /**
  *  转带千位符字符串
  */
++ (instancetype)xs_separatedDigitString:(NSString *)string;
+
+/**
+ *  转带千位符字符串
+ */
 + (instancetype)xs_separatedDigitStringWithNumber:(NSNumber *)number;
 
 /**

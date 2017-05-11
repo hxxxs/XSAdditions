@@ -11,6 +11,10 @@
 
 @implementation NSString (XSAdditions)
 
++ (instancetype)xs_separatedDigitString:(NSString *)string {
+    return [self xs_separatedDigitStringWithNumber:@(string.doubleValue)];
+}
+
 + (instancetype)xs_separatedDigitStringWithNumber:(NSNumber *)number {
     
     NSNumberFormatter* numberFormatter = [[NSNumberFormatter alloc] init];
