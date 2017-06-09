@@ -20,6 +20,12 @@
 
     NSString *str = [NSString xs_separatedDigitString:@"1,000.21"];
     NSLog(@"%@", str);
+    
+    NSString *str2 = [NSString xs_separatedDigitString:@"1，000.21"];
+    NSLog(@"%@", str2);
+    
+    NSString *str3 = [NSString xs_separatedDigitString:@"1000.21"];
+    NSLog(@"%@", str3);
 }
 
 - (void)didReceiveMemoryWarning {

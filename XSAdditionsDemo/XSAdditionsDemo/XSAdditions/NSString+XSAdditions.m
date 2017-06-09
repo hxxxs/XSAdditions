@@ -12,9 +12,15 @@
 @implementation NSString (XSAdditions)
 
 + (instancetype)xs_separatedDigitString:(NSString *)string {
-    NSString *str = [string stringByReplacingOccurrencesOfString:@"，" withString:@""];
-    NSString *str2 = [str stringByReplacingOccurrencesOfString:@"," withString:@""];
-    return [self xs_separatedDigitStringWithNumber:@(str2.doubleValue)];
+    NSString *str;
+    if ([string containsString:@","]) {
+        str = [string stringByReplacingOccurrencesOfString:@"," withString:@""];
+    } else if([string containsString:@"，"]) {
+        str = [string stringByReplacingOccurrencesOfString:@"，" withString:@""];
+    } else {
+        str = string;
+    }
+    return [self xs_separatedDigitStringWithNumber:@(str.doubleValue)];
 }
 
 + (instancetype)xs_separatedDigitStringWithNumber:(NSNumber *)number {
