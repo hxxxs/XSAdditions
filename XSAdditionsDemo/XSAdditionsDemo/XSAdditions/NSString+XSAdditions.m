@@ -12,7 +12,7 @@
 @implementation NSString (XSAdditions)
 
 + (instancetype)xs_separatedDigitString:(NSString *)string {
-    NSString *str = [NSString stringWithString:string];
+    NSString *str = [NSString stringWithFormat:@"%@", string];
     NSString *value;
     if ([str containsString:@","]) {
         value = [string stringByReplacingOccurrencesOfString:@"," withString:@""];
