@@ -28,6 +28,7 @@
 		18E6EACD1E6E4FC9003AFADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6EACB1E6E4FC9003AFADF /* Main.storyboard */; };
 		18E6EACF1E6E4FC9003AFADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E6EACE1E6E4FC9003AFADF /* Assets.xcassets */; };
 		18E6EAD21E6E4FC9003AFADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6EAD01E6E4FC9003AFADF /* LaunchScreen.storyboard */; };
+		AD1A9A1D1F079D6E003580B0 /* NSDate+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A9A1C1F079D6E003580B0 /* NSDate+XSAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,8 @@
 		18E6EACE1E6E4FC9003AFADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E6EAD11E6E4FC9003AFADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18E6EAD31E6E4FC9003AFADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD1A9A1B1F079D6E003580B0 /* NSDate+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XSAdditions.h"; sourceTree = "<group>"; };
+		AD1A9A1C1F079D6E003580B0 /* NSDate+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XSAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				180AFE841E83C8E80051E8D1 /* NSURLRequest+SSL.m */,
 				181A9AF21E77C98F00DF8273 /* XSAdditions.h */,
 				181A9B0A1E77D74F00DF8273 /* XSAdditions.bundle */,
+				AD1A9A1B1F079D6E003580B0 /* NSDate+XSAdditions.h */,
+				AD1A9A1C1F079D6E003580B0 /* NSDate+XSAdditions.m */,
 			);
 			path = XSAdditions;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				181A9AFF1E77C98F00DF8273 /* UIViewController+XSAdditions.m in Sources */,
 				181A9AFD1E77C98F00DF8273 /* UIScreen+XSAdditions.m in Sources */,
 				181A9AF71E77C98F00DF8273 /* NSString+XSAdditions.m in Sources */,
+				AD1A9A1D1F079D6E003580B0 /* NSDate+XSAdditions.m in Sources */,
 				181A9AF91E77C98F00DF8273 /* UIButton+XSAdditions.m in Sources */,
 				181A9AF51E77C98F00DF8273 /* NSObject+XSRuntime.m in Sources */,
 			);
