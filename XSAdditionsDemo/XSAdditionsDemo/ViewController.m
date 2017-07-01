@@ -17,8 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
 
-    NSString *str = [NSString xs_separatedDigitString:@"1,000.21"];
+    NSString *str = [NSString xs_separatedDigitString:@(1001.21)];
     NSLog(@"%@", str);
     
     NSString *str2 = [NSString xs_separatedDigitString:@"1，000.21"];

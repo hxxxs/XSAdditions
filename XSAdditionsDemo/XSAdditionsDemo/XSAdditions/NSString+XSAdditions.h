@@ -13,7 +13,7 @@
 /**
  *  转带千位符字符串
  */
-+ (instancetype)xs_separatedDigitString:(NSString *)string;
++ (instancetype)xs_separatedDigitString:(id)value;
 
 /**
  *  转带千位符字符串

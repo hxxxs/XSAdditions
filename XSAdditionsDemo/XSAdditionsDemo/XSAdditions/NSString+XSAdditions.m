@@ -11,17 +11,25 @@
 
 @implementation NSString (XSAdditions)
 
-+ (instancetype)xs_separatedDigitString:(NSString *)string {
-    NSString *str = [NSString stringWithFormat:@"%@", string];
-    NSString *value;
-    if ([str containsString:@","]) {
-        value = [string stringByReplacingOccurrencesOfString:@"," withString:@""];
-    } else if([str containsString:@"，"]) {
-        value = [string stringByReplacingOccurrencesOfString:@"，" withString:@""];
-    } else {
-        value = str;
++ (instancetype)xs_separatedDigitString:(id)value {
+    
+    if ([value isKindOfClass:[NSString class]]) {
+        
+        NSString *string = nil;
+        if ([value containsString:@","]) {
+            string = [value stringByReplacingOccurrencesOfString:@"," withString:@""];
+        } else if([value containsString:@"，"]) {
+            string = [value stringByReplacingOccurrencesOfString:@"，" withString:@""];
+        } else {
+            string = value;
+        }
+        return [self xs_separatedDigitStringWithNumber:@(string.doubleValue)];
     }
-    return [self xs_separatedDigitStringWithNumber:@(value.doubleValue)];
+    else if ([value isKindOfClass:[NSNumber class]]) {
+        return [self xs_separatedDigitStringWithNumber:value];
+    }
+    
+    return @"";
 }
 
 + (instancetype)xs_separatedDigitStringWithNumber:(NSNumber *)number {
