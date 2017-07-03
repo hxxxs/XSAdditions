@@ -18,7 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    NSString *str = @"aaaaa";
+    if ([str xs_isRepeat]) {
+        NSLog(@"Hhhh");
+    }
 }
 
 - (void)logNSDate {

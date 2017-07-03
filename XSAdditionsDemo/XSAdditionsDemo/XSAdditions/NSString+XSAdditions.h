@@ -11,6 +11,18 @@
 @interface NSString (XSAdditions)
 
 /**
+ 字符串中字符相同
+ */
+- (BOOL)xs_isRepeat;
+
+/**
+ 字符串是否包含几位重复字符
+
+ @param repeatCount 重复字符个数
+ */
+- (BOOL)xs_repeatWithCount:(NSInteger)repeatCount;
+
+/**
  *  转带千位符字符串
  */
 + (instancetype)xs_separatedDigitString:(id)value;
@@ -29,6 +41,11 @@
  获取字符串中的数字
  */
 - (int)xs_findNumFromString;
+
+/**
+ 获取字符串中的数字（返回数组）
+ */
+- (NSArray *)xs_getFloat;
 
 #pragma mark - Base64 编码/解码
 /**

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "XSAdditions"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "自己整理的常用系统类拓展"
   s.homepage     = "https://github.com/cedarYellow/XSAdditions"
   s.license      = "MIT"

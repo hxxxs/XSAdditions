@@ -11,6 +11,38 @@
 
 @implementation NSString (XSAdditions)
 
+- (BOOL)xs_isRepeat {
+    return [self xs_repeatWithCount:self.length];
+}
+
+- (BOOL)xs_repeatWithCount:(NSInteger)repeatCount {
+    
+    if (1 == repeatCount && 0 < self.length) {
+        return YES;
+    }
+    else if (0 >= self.length){
+        return NO;
+    }
+    
+    NSString *lastStr = @"";
+    NSInteger count = 1;
+    
+    for (int i = 0; i < self.length; i++) {
+        NSString *newStr = [self substringWithRange:NSMakeRange(i, 1)];
+        if ([lastStr isEqualToString:newStr]) {
+            count ++;
+            if (repeatCount == count) {
+                return YES;
+            }
+        }
+        else{
+            count = 1;
+        }
+        lastStr = newStr;
+    }
+    return NO;
+}
+
 + (instancetype)xs_separatedDigitString:(id)value {
     
     if ([value isKindOfClass:[NSString class]]) {
@@ -63,6 +95,28 @@
     }
     
     return numberString.intValue;
+}
+
+- (NSArray *)xs_getFloat {
+    
+    NSMutableArray *numArray = [NSMutableArray array];
+    NSScanner *scanner = [NSScanner scannerWithString:self];
+    NSString *result;
+    
+    NSCharacterSet *character = [NSCharacterSet characterSetWithCharactersInString:@"0123456789."];
+    
+    while (![scanner isAtEnd]) {
+        result = @"";
+        [scanner scanUpToCharactersFromSet:character intoString:NULL];
+        
+        [scanner scanCharactersFromSet:character intoString:&result];
+        
+        if (![result isEqualToString:@""]) {
+            [numArray addObject:@(result.floatValue)];
+        }
+    }
+    
+    return [numArray copy];
 }
 
 #pragma mark - Base64 编码／解码
