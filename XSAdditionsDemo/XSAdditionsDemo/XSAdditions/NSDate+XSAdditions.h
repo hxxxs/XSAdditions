@@ -66,4 +66,5 @@
  年
  */
 - (NSInteger)xs_year;
+
 @end

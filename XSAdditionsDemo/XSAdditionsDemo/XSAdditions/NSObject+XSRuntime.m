@@ -47,7 +47,7 @@
     return arrayM.copy;
 }
 
-void *propertiesKey = "cn.itcast.propertiesList";
+void *propertiesKey = "cn.cedar.propertiesList";
 
 + (NSArray *)xs_propertiesList {
     
@@ -83,7 +83,7 @@ void *propertiesKey = "cn.itcast.propertiesList";
     return objc_getAssociatedObject(self, propertiesKey);
 }
 
-void *ivarsKey = "cn.itcast.ivarsList";
+void *ivarsKey = "cn.cedar.ivarsList";
 
 + (NSArray *)xs_ivarsList {
     

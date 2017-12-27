@@ -17,6 +17,8 @@
  @param fontSize 字体大小
  @param color    文字颜色
  */
-+ (instancetype)xs_labelWithText:(NSString *)text fontSize:(CGFloat)fontSize color:(UIColor *)color;
++ (instancetype)xs_labelWithText:(NSString *)text
+                        fontSize:(CGFloat)fontSize
+                           color:(UIColor *)color;
 
 @end

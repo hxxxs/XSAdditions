@@ -15,7 +15,6 @@
 #import "NSString+XSAdditions.h"
 #import "UIButton+XSAdditions.h"
 #import "UIColor+XSAdditions.h"
-#import "UIBarButtonItem+XSAdditions.h"
 #import "UIImage+XSAdditions.h"
 #import "UILabel+XSAdditions.h"
 #import "UIScreen+XSAdditions.h"

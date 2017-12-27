@@ -13,7 +13,6 @@
 		181A9AF51E77C98F00DF8273 /* NSObject+XSRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9ADD1E77C98F00DF8273 /* NSObject+XSRuntime.m */; };
 		181A9AF61E77C98F00DF8273 /* NSString+STRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9ADF1E77C98F00DF8273 /* NSString+STRegex.m */; };
 		181A9AF71E77C98F00DF8273 /* NSString+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AE11E77C98F00DF8273 /* NSString+XSAdditions.m */; };
-		181A9AF81E77C98F00DF8273 /* UIBarButtonItem+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AE31E77C98F00DF8273 /* UIBarButtonItem+XSAdditions.m */; };
 		181A9AF91E77C98F00DF8273 /* UIButton+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AE51E77C98F00DF8273 /* UIButton+XSAdditions.m */; };
 		181A9AFA1E77C98F00DF8273 /* UIColor+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AE71E77C98F00DF8273 /* UIColor+XSAdditions.m */; };
 		181A9AFB1E77C98F00DF8273 /* UIImage+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AE91E77C98F00DF8273 /* UIImage+XSAdditions.m */; };
@@ -21,7 +20,6 @@
 		181A9AFD1E77C98F00DF8273 /* UIScreen+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AED1E77C98F00DF8273 /* UIScreen+XSAdditions.m */; };
 		181A9AFE1E77C98F00DF8273 /* UIView+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AEF1E77C98F00DF8273 /* UIView+XSAdditions.m */; };
 		181A9AFF1E77C98F00DF8273 /* UIViewController+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AF11E77C98F00DF8273 /* UIViewController+XSAdditions.m */; };
-		181A9B0B1E77D74F00DF8273 /* XSAdditions.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 181A9B0A1E77D74F00DF8273 /* XSAdditions.bundle */; };
 		18E6EAC41E6E4FC9003AFADF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAC31E6E4FC9003AFADF /* main.m */; };
 		18E6EAC71E6E4FC9003AFADF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAC61E6E4FC9003AFADF /* AppDelegate.m */; };
 		18E6EACA1E6E4FC9003AFADF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E6EAC91E6E4FC9003AFADF /* ViewController.m */; };
@@ -44,8 +42,6 @@
 		181A9ADF1E77C98F00DF8273 /* NSString+STRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+STRegex.m"; sourceTree = "<group>"; };
 		181A9AE01E77C98F00DF8273 /* NSString+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XSAdditions.h"; sourceTree = "<group>"; };
 		181A9AE11E77C98F00DF8273 /* NSString+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XSAdditions.m"; sourceTree = "<group>"; };
-		181A9AE21E77C98F00DF8273 /* UIBarButtonItem+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XSAdditions.h"; sourceTree = "<group>"; };
-		181A9AE31E77C98F00DF8273 /* UIBarButtonItem+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XSAdditions.m"; sourceTree = "<group>"; };
 		181A9AE41E77C98F00DF8273 /* UIButton+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XSAdditions.h"; sourceTree = "<group>"; };
 		181A9AE51E77C98F00DF8273 /* UIButton+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XSAdditions.m"; sourceTree = "<group>"; };
 		181A9AE61E77C98F00DF8273 /* UIColor+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XSAdditions.h"; sourceTree = "<group>"; };
@@ -61,7 +57,6 @@
 		181A9AF01E77C98F00DF8273 /* UIViewController+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XSAdditions.h"; sourceTree = "<group>"; };
 		181A9AF11E77C98F00DF8273 /* UIViewController+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XSAdditions.m"; sourceTree = "<group>"; };
 		181A9AF21E77C98F00DF8273 /* XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSAdditions.h; sourceTree = "<group>"; };
-		181A9B0A1E77D74F00DF8273 /* XSAdditions.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XSAdditions.bundle; sourceTree = "<group>"; };
 		18E6EABF1E6E4FC9003AFADF /* XSAdditionsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSAdditionsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E6EAC31E6E4FC9003AFADF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18E6EAC51E6E4FC9003AFADF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,8 +95,6 @@
 				181A9ADF1E77C98F00DF8273 /* NSString+STRegex.m */,
 				181A9AE01E77C98F00DF8273 /* NSString+XSAdditions.h */,
 				181A9AE11E77C98F00DF8273 /* NSString+XSAdditions.m */,
-				181A9AE21E77C98F00DF8273 /* UIBarButtonItem+XSAdditions.h */,
-				181A9AE31E77C98F00DF8273 /* UIBarButtonItem+XSAdditions.m */,
 				181A9AE41E77C98F00DF8273 /* UIButton+XSAdditions.h */,
 				181A9AE51E77C98F00DF8273 /* UIButton+XSAdditions.m */,
 				181A9AE61E77C98F00DF8273 /* UIColor+XSAdditions.h */,
@@ -119,7 +112,6 @@
 				180AFE831E83C8E80051E8D1 /* NSURLRequest+SSL.h */,
 				180AFE841E83C8E80051E8D1 /* NSURLRequest+SSL.m */,
 				181A9AF21E77C98F00DF8273 /* XSAdditions.h */,
-				181A9B0A1E77D74F00DF8273 /* XSAdditions.bundle */,
 				AD1A9A1B1F079D6E003580B0 /* NSDate+XSAdditions.h */,
 				AD1A9A1C1F079D6E003580B0 /* NSDate+XSAdditions.m */,
 			);
@@ -225,7 +217,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181A9B0B1E77D74F00DF8273 /* XSAdditions.bundle in Resources */,
 				18E6EAD21E6E4FC9003AFADF /* LaunchScreen.storyboard in Resources */,
 				18E6EACF1E6E4FC9003AFADF /* Assets.xcassets in Resources */,
 				18E6EACD1E6E4FC9003AFADF /* Main.storyboard in Resources */,
@@ -241,7 +232,6 @@
 			files = (
 				18E6EACA1E6E4FC9003AFADF /* ViewController.m in Sources */,
 				181A9AFE1E77C98F00DF8273 /* UIView+XSAdditions.m in Sources */,
-				181A9AF81E77C98F00DF8273 /* UIBarButtonItem+XSAdditions.m in Sources */,
 				181A9AF61E77C98F00DF8273 /* NSString+STRegex.m in Sources */,
 				181A9AFA1E77C98F00DF8273 /* UIColor+XSAdditions.m in Sources */,
 				18E6EAC71E6E4FC9003AFADF /* AppDelegate.m in Sources */,
