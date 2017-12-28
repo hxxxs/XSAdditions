@@ -47,16 +47,7 @@
     return arrayM.copy;
 }
 
-void *propertiesKey = "cn.cedar.propertiesList";
-
 + (NSArray *)xs_propertiesList {
-    
-    // 获取关联对象
-    NSArray *result = objc_getAssociatedObject(self, propertiesKey);
-    
-    if (result != nil) {
-        return result;
-    }
     
     unsigned int count = 0;
     objc_property_t *list = class_copyPropertyList([self class], &count);
@@ -75,25 +66,11 @@ void *propertiesKey = "cn.cedar.propertiesList";
         [arrayM addObject:name];
     }
     
-    free(list);
-    
-    // 设置关联对象
-    objc_setAssociatedObject(self, propertiesKey, arrayM, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    
-    return objc_getAssociatedObject(self, propertiesKey);
+    return [arrayM copy];
 }
 
-void *ivarsKey = "cn.cedar.ivarsList";
-
 + (NSArray *)xs_ivarsList {
-    
-    // 获取关联对象
-    NSArray *result = objc_getAssociatedObject(self, ivarsKey);
-    
-    if (result != nil) {
-        return result;
-    }
-    
+
     unsigned int count = 0;
     Ivar *list = class_copyIvarList([self class], &count);
     
@@ -111,12 +88,7 @@ void *ivarsKey = "cn.cedar.ivarsList";
         [arrayM addObject:name];
     }
     
-    free(list);
-    
-    // 设置关联对象
-    objc_setAssociatedObject(self, ivarsKey, arrayM, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    
-    return objc_getAssociatedObject(self, ivarsKey);
+    return [arrayM copy];
 }
 
 @end
