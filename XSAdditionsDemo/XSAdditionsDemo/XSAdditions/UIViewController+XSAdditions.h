@@ -18,4 +18,9 @@
  */
 - (void)xs_addChildController:(UIViewController *)childController intoView:(UIView *)view;
 
+/**
+ 打电话
+ */
+- (void)xs_callPhone:(NSString *)phone;
+
 @end

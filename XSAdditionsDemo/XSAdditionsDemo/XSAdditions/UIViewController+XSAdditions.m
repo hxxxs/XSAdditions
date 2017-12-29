@@ -19,4 +19,12 @@
     [childController didMoveToParentViewController:self];
 }
 
+- (void)xs_callPhone:(NSString *)phone {
+    
+    NSString *phoneStr = [NSString stringWithFormat:@"tel:%@", phone];
+    UIWebView *web = [[UIWebView alloc] init];
+    [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:phoneStr]]];
+    [self.view addSubview:web];
+}
+
 @end
