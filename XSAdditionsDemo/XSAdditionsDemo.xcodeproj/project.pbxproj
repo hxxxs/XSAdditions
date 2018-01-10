@@ -24,6 +24,7 @@
 		18E6EACD1E6E4FC9003AFADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6EACB1E6E4FC9003AFADF /* Main.storyboard */; };
 		18E6EACF1E6E4FC9003AFADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E6EACE1E6E4FC9003AFADF /* Assets.xcassets */; };
 		18E6EAD21E6E4FC9003AFADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6EAD01E6E4FC9003AFADF /* LaunchScreen.storyboard */; };
+		8C30A1FA2005DB84000A2193 /* UIButton+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C30A1F92005DB84000A2193 /* UIButton+XSAdditions.m */; };
 		AD1A9A1D1F079D6E003580B0 /* NSDate+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1A9A1C1F079D6E003580B0 /* NSDate+XSAdditions.m */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,8 @@
 		18E6EACE1E6E4FC9003AFADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E6EAD11E6E4FC9003AFADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18E6EAD31E6E4FC9003AFADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C30A1F82005DB84000A2193 /* UIButton+XSAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+XSAdditions.h"; sourceTree = "<group>"; };
+		8C30A1F92005DB84000A2193 /* UIButton+XSAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XSAdditions.m"; sourceTree = "<group>"; };
 		AD1A9A1B1F079D6E003580B0 /* NSDate+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XSAdditions.h"; sourceTree = "<group>"; };
 		AD1A9A1C1F079D6E003580B0 /* NSDate+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XSAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +107,8 @@
 				181A9AF21E77C98F00DF8273 /* XSAdditions.h */,
 				AD1A9A1B1F079D6E003580B0 /* NSDate+XSAdditions.h */,
 				AD1A9A1C1F079D6E003580B0 /* NSDate+XSAdditions.m */,
+				8C30A1F82005DB84000A2193 /* UIButton+XSAdditions.h */,
+				8C30A1F92005DB84000A2193 /* UIButton+XSAdditions.m */,
 			);
 			path = XSAdditions;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C30A1FA2005DB84000A2193 /* UIButton+XSAdditions.m in Sources */,
 				18E6EACA1E6E4FC9003AFADF /* ViewController.m in Sources */,
 				181A9AFE1E77C98F00DF8273 /* UIView+XSAdditions.m in Sources */,
 				181A9AF61E77C98F00DF8273 /* NSString+STRegex.m in Sources */,
