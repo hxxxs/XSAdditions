@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		180AFE851E83C8E80051E8D1 /* NSURLRequest+SSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 180AFE841E83C8E80051E8D1 /* NSURLRequest+SSL.m */; };
-		181A9AF31E77C98F00DF8273 /* NSArray+XSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AD91E77C98F00DF8273 /* NSArray+XSLog.m */; };
 		181A9AF41E77C98F00DF8273 /* NSAttributedString+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9ADB1E77C98F00DF8273 /* NSAttributedString+XSAdditions.m */; };
 		181A9AF51E77C98F00DF8273 /* NSObject+XSRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9ADD1E77C98F00DF8273 /* NSObject+XSRuntime.m */; };
 		181A9AF61E77C98F00DF8273 /* NSString+STRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9ADF1E77C98F00DF8273 /* NSString+STRegex.m */; };
 		181A9AF71E77C98F00DF8273 /* NSString+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AE11E77C98F00DF8273 /* NSString+XSAdditions.m */; };
-		181A9AF91E77C98F00DF8273 /* UIButton+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AE51E77C98F00DF8273 /* UIButton+XSAdditions.m */; };
 		181A9AFA1E77C98F00DF8273 /* UIColor+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AE71E77C98F00DF8273 /* UIColor+XSAdditions.m */; };
 		181A9AFB1E77C98F00DF8273 /* UIImage+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AE91E77C98F00DF8273 /* UIImage+XSAdditions.m */; };
 		181A9AFC1E77C98F00DF8273 /* UILabel+XSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181A9AEB1E77C98F00DF8273 /* UILabel+XSAdditions.m */; };
@@ -32,8 +30,6 @@
 /* Begin PBXFileReference section */
 		180AFE831E83C8E80051E8D1 /* NSURLRequest+SSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+SSL.h"; sourceTree = "<group>"; };
 		180AFE841E83C8E80051E8D1 /* NSURLRequest+SSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+SSL.m"; sourceTree = "<group>"; };
-		181A9AD81E77C98F00DF8273 /* NSArray+XSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XSLog.h"; sourceTree = "<group>"; };
-		181A9AD91E77C98F00DF8273 /* NSArray+XSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+XSLog.m"; sourceTree = "<group>"; };
 		181A9ADA1E77C98F00DF8273 /* NSAttributedString+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+XSAdditions.h"; sourceTree = "<group>"; };
 		181A9ADB1E77C98F00DF8273 /* NSAttributedString+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+XSAdditions.m"; sourceTree = "<group>"; };
 		181A9ADC1E77C98F00DF8273 /* NSObject+XSRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XSRuntime.h"; sourceTree = "<group>"; };
@@ -42,8 +38,6 @@
 		181A9ADF1E77C98F00DF8273 /* NSString+STRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+STRegex.m"; sourceTree = "<group>"; };
 		181A9AE01E77C98F00DF8273 /* NSString+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XSAdditions.h"; sourceTree = "<group>"; };
 		181A9AE11E77C98F00DF8273 /* NSString+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XSAdditions.m"; sourceTree = "<group>"; };
-		181A9AE41E77C98F00DF8273 /* UIButton+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XSAdditions.h"; sourceTree = "<group>"; };
-		181A9AE51E77C98F00DF8273 /* UIButton+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XSAdditions.m"; sourceTree = "<group>"; };
 		181A9AE61E77C98F00DF8273 /* UIColor+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XSAdditions.h"; sourceTree = "<group>"; };
 		181A9AE71E77C98F00DF8273 /* UIColor+XSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XSAdditions.m"; sourceTree = "<group>"; };
 		181A9AE81E77C98F00DF8273 /* UIImage+XSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XSAdditions.h"; sourceTree = "<group>"; };
@@ -85,8 +79,6 @@
 		181A9AD71E77C98F00DF8273 /* XSAdditions */ = {
 			isa = PBXGroup;
 			children = (
-				181A9AD81E77C98F00DF8273 /* NSArray+XSLog.h */,
-				181A9AD91E77C98F00DF8273 /* NSArray+XSLog.m */,
 				181A9ADA1E77C98F00DF8273 /* NSAttributedString+XSAdditions.h */,
 				181A9ADB1E77C98F00DF8273 /* NSAttributedString+XSAdditions.m */,
 				181A9ADC1E77C98F00DF8273 /* NSObject+XSRuntime.h */,
@@ -95,8 +87,6 @@
 				181A9ADF1E77C98F00DF8273 /* NSString+STRegex.m */,
 				181A9AE01E77C98F00DF8273 /* NSString+XSAdditions.h */,
 				181A9AE11E77C98F00DF8273 /* NSString+XSAdditions.m */,
-				181A9AE41E77C98F00DF8273 /* UIButton+XSAdditions.h */,
-				181A9AE51E77C98F00DF8273 /* UIButton+XSAdditions.m */,
 				181A9AE61E77C98F00DF8273 /* UIColor+XSAdditions.h */,
 				181A9AE71E77C98F00DF8273 /* UIColor+XSAdditions.m */,
 				181A9AE81E77C98F00DF8273 /* UIImage+XSAdditions.h */,
@@ -235,7 +225,6 @@
 				181A9AF61E77C98F00DF8273 /* NSString+STRegex.m in Sources */,
 				181A9AFA1E77C98F00DF8273 /* UIColor+XSAdditions.m in Sources */,
 				18E6EAC71E6E4FC9003AFADF /* AppDelegate.m in Sources */,
-				181A9AF31E77C98F00DF8273 /* NSArray+XSLog.m in Sources */,
 				181A9AFB1E77C98F00DF8273 /* UIImage+XSAdditions.m in Sources */,
 				181A9AF41E77C98F00DF8273 /* NSAttributedString+XSAdditions.m in Sources */,
 				18E6EAC41E6E4FC9003AFADF /* main.m in Sources */,
@@ -245,7 +234,6 @@
 				181A9AFD1E77C98F00DF8273 /* UIScreen+XSAdditions.m in Sources */,
 				181A9AF71E77C98F00DF8273 /* NSString+XSAdditions.m in Sources */,
 				AD1A9A1D1F079D6E003580B0 /* NSDate+XSAdditions.m in Sources */,
-				181A9AF91E77C98F00DF8273 /* UIButton+XSAdditions.m in Sources */,
 				181A9AF51E77C98F00DF8273 /* NSObject+XSRuntime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
