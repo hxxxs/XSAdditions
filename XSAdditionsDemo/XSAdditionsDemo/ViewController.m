@@ -18,10 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *str = @"aaaaa";
-    if ([str xs_isRepeat]) {
-        NSLog(@"Hhhh");
-    }
+//    NSString *str = @"aaaaa";
+//    if ([str xs_isRepeat]) {
+//        NSLog(@"Hhhh");
+//    }
+    
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com/中文"];
+    NSLog(@"%@", url);
 }
 
 - (void)logNSDate {
