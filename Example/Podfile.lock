@@ -1,0 +1,16 @@
+PODS:
+  - XSAdditions (0.2.2)
+
+DEPENDENCIES:
+  - XSAdditions (from `../`)
+
+EXTERNAL SOURCES:
+  XSAdditions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XSAdditions: 3dd764aa57e3c36c7a80560e78b74f93628d44fa
+
+PODFILE CHECKSUM: d9a0a4bdb06b290331b22e450faa94654e6558be
+
+COCOAPODS: 1.5.0

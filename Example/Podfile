@@ -1,0 +1,14 @@
+
+platform :ios, '9.0'
+
+use_frameworks!
+
+target 'XSAdditions_Example' do
+  pod 'XSAdditions', :path => '../'
+
+  target 'XSAdditions_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
