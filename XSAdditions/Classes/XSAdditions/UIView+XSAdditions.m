@@ -7,8 +7,46 @@
 //
 
 #import "UIView+XSAdditions.h"
+#import <objc/runtime.h>
+
+static void *redLayerKey = &redLayerKey;
 
 @implementation UIView (XSAdditions)
+
+- (void)setXs_redLayer:(CAShapeLayer *)xs_redLayer {
+    objc_setAssociatedObject(self, &redLayerKey, xs_redLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (CAShapeLayer *)xs_redLayer {
+    return objc_getAssociatedObject(self, &redLayerKey);
+}
+
+- (void)xs_hiddenRedDot {
+    
+    if (self.xs_redLayer == self.layer.sublayers.lastObject) {
+        
+        [self.layer.sublayers.lastObject removeFromSuperlayer];
+    }
+}
+
+- (void)xs_showRedDot {
+    
+    if (self.xs_redLayer == self.layer.sublayers.lastObject) {
+        return ;
+    }
+    
+    CAShapeLayer *layer = [[CAShapeLayer alloc] init];
+    layer.fillColor = [UIColor redColor].CGColor;
+    [self.layer addSublayer:layer];
+    self.xs_redLayer = layer;
+    
+    CGFloat wh = MIN(MIN(self.xs_width, self.xs_height) / 2, 10);
+    CGFloat x = self.xs_width - wh / 2;
+    CGFloat y = - wh / 2;
+    CGRect frame = CGRectMake(x, y, wh, wh);
+    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:frame];
+    layer.path = path.CGPath;
+}
 
 - (UIViewController*)xs_viewController {
     for (UIView* next = [self superview]; next; next = next.superview) {

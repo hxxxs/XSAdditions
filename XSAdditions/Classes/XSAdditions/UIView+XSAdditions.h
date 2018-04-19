@@ -18,6 +18,7 @@
 @property (nonatomic, assign) CGFloat xs_height;
 @property (nonatomic, assign) CGSize xs_size;
 @property (nonatomic, assign) CGPoint xs_origin;
+@property (nonatomic, strong) CAShapeLayer *xs_redLayer;
 
 /**
  返回视图截图
@@ -25,5 +26,15 @@
 - (UIImage *)xs_snapshotImage;
 
 - (UIViewController *)xs_viewController;
+
+/**
+ 显示红点
+ */
+- (void)xs_showRedDot;
+
+/**
+ 隐藏红点
+ */
+- (void)xs_hiddenRedDot;
 
 @end
