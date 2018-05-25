@@ -9,16 +9,16 @@
 #import "UIView+XSAdditions.h"
 #import <objc/runtime.h>
 
-static void *redLayerKey = &redLayerKey;
+static char *redLayerKey = "redLayerKey";
 
 @implementation UIView (XSAdditions)
 
 - (void)setXs_redLayer:(CAShapeLayer *)xs_redLayer {
-    objc_setAssociatedObject(self, &redLayerKey, xs_redLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, redLayerKey, xs_redLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (CAShapeLayer *)xs_redLayer {
-    return objc_getAssociatedObject(self, &redLayerKey);
+    return objc_getAssociatedObject(self, redLayerKey);
 }
 
 - (void)xs_hiddenRedDot {
