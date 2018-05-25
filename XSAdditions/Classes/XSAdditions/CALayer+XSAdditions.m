@@ -11,13 +11,11 @@
 @implementation CALayer (XSAdditions)
 
 - (UIColor *)borderColorFromUIColor {
-    
-    return objc_getAssociatedObject(self, @selector(borderColorFromUIColor));
+    return [UIColor colorWithCGColor:self.borderColor];
     
 }
 
 -(void)setBorderColorFromUIColor:(UIColor *)borderColorFromUIColor {
-    objc_setAssociatedObject(self, @selector(borderColorFromUIColor), borderColorFromUIColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     self.borderColor = borderColorFromUIColor.CGColor;
 }
 
