@@ -6,13 +6,11 @@
 //
 
 #import "CALayer+XSAdditions.h"
-#import <objc/runtime.h>
 
 @implementation CALayer (XSAdditions)
 
 - (UIColor *)borderColorFromUIColor {
     return [UIColor colorWithCGColor:self.borderColor];
-    
 }
 
 -(void)setBorderColorFromUIColor:(UIColor *)borderColorFromUIColor {
