@@ -35,7 +35,7 @@ static char *xs_placeholderLabelKey = "xs_placeholderLabelKey";
 }
 
 - (void)setXs_placeholderLabel:(UILabel *)xs_placeholderLabel {
-    objc_setAssociatedObject(self, xs_placeholderLabelKey, xs_placeholderLabel, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, xs_placeholderLabelKey, xs_placeholderLabel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     //  添加通知监听textView内容变化
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updatePlaceholder) name:UITextViewTextDidChangeNotification object:self];
 }
@@ -50,7 +50,7 @@ static char *xs_placeholderLabelKey = "xs_placeholderLabelKey";
     self.xs_placeholderLabel.textColor = [UIColor lightGrayColor];
     self.xs_placeholderLabel.text = placeholder;
     self.xs_placeholderLabel.textAlignment = self.textAlignment;
-    self.xs_placeholderLabel.font = self.font;
+    self.xs_placeholderLabel.font = self.font != nil ? self.font : [self defaultFont];
     [self insertSubview:self.xs_placeholderLabel atIndex:0];
 }
 
@@ -62,6 +62,12 @@ static char *xs_placeholderLabelKey = "xs_placeholderLabelKey";
 
 - (void)updatePlaceholder {
     self.xs_placeholderLabel.hidden = self.text.length > 0;
+}
+
+- (UIFont *)defaultFont {
+    UITextView *v = [[UITextView alloc] init];
+    v.text = @" ";
+    return v.font;
 }
 
 @end

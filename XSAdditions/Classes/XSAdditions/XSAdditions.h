@@ -22,5 +22,6 @@
 #import "NSString+STRegex.h"
 #import "NSURLRequest+SSL.h"
 #import "NSDate+XSAdditions.h"
+#import "UITextView+XSAdditions.h"
 
 #endif 

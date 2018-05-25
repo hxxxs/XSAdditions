@@ -1,5 +1,5 @@
 PODS:
-  - XSAdditions (0.2.3)
+  - XSAdditions (0.2.4)
 
 DEPENDENCIES:
   - XSAdditions (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XSAdditions: 3ce17587f210628bd4bf368bf2c201dc53b6f913
+  XSAdditions: 88e63f9daffccf8c1c231e9ad4029fda8b6e4550
 
 PODFILE CHECKSUM: d9a0a4bdb06b290331b22e450faa94654e6558be
 
