@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XSAdditions'
-  s.version          = '0.2.4'
+  s.version          = '0.2.6'
   s.summary          = 'OC 拓展'
 
   s.homepage         = 'https://github.com/hxxxs'

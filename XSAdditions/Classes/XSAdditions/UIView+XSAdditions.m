@@ -9,21 +9,17 @@
 #import "UIView+XSAdditions.h"
 #import <objc/runtime.h>
 
-static char *redLayerKey = "redLayerKey";
+@interface UIView ()
+
+@property (nonatomic, weak) CAShapeLayer *redLayer;
+
+@end
 
 @implementation UIView (XSAdditions)
 
-- (void)setXs_redLayer:(CAShapeLayer *)xs_redLayer {
-    objc_setAssociatedObject(self, redLayerKey, xs_redLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (CAShapeLayer *)xs_redLayer {
-    return objc_getAssociatedObject(self, redLayerKey);
-}
-
 - (void)xs_hiddenRedDot {
     
-    if (self.xs_redLayer == self.layer.sublayers.lastObject) {
+    if (self.redLayer == self.layer.sublayers.lastObject) {
         
         [self.layer.sublayers.lastObject removeFromSuperlayer];
     }
@@ -31,17 +27,17 @@ static char *redLayerKey = "redLayerKey";
 
 - (void)xs_showRedDot {
     
-    if (self.xs_redLayer == self.layer.sublayers.lastObject) {
+    if (self.redLayer == self.layer.sublayers.lastObject) {
         return ;
     }
     
     CAShapeLayer *layer = [[CAShapeLayer alloc] init];
     layer.fillColor = [UIColor redColor].CGColor;
     [self.layer addSublayer:layer];
-    self.xs_redLayer = layer;
+    self.redLayer = layer;
     
-    CGFloat wh = MIN(MIN(self.xs_width, self.xs_height) / 2, 10);
-    CGFloat x = self.xs_width - wh / 2;
+    CGFloat wh = MIN(MIN(self.width, self.height) / 2, 10);
+    CGFloat x = self.width - wh / 2;
     CGFloat y = - wh / 2;
     CGRect frame = CGRectMake(x, y, wh, wh);
     UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:frame];
@@ -59,96 +55,132 @@ static char *redLayerKey = "redLayerKey";
 }
 
 - (UIImage *)xs_snapshotImage {
-    
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0);
-    
     [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:YES];
-    
     UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
-    
     UIGraphicsEndImageContext();
-    
     return result;
 }
 
-#pragma mark - frame 属性的重写
-- (void)setXs_x:(CGFloat)xs_x {
+#pragma mark - override
+
+- (void)setBorderWidth:(CGFloat)borderWidth {
+    self.layer.borderWidth = borderWidth;
+}
+
+- (CGFloat)borderWidth {
+    return self.layer.borderWidth;
+}
+
+- (void)setBorderColor:(UIColor *)borderColor {
+    self.layer.borderColor = borderColor.CGColor;
+}
+
+- (UIColor *)borderColor {
+    return [UIColor colorWithCGColor:self.layer.borderColor];
+}
+
+- (void)setCornerRadius:(CGFloat)cornerRadius {
+    self.layer.cornerRadius = cornerRadius;
+}
+
+- (CGFloat)cornerRadius {
+    return self.layer.cornerRadius;
+}
+
+- (void)setMasksToBounds:(BOOL)masksToBounds {
+    self.layer.masksToBounds = masksToBounds;
+}
+
+- (BOOL)masksToBounds {
+    return self.layer.masksToBounds;
+}
+
+- (void)setRedLayer:(CAShapeLayer *)redLayer {
+    objc_setAssociatedObject(self, @selector(redLayer), redLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (CAShapeLayer *)redLayer {
+    return objc_getAssociatedObject(self, @selector(redLayer));
+}
+
+- (void)setX:(CGFloat)x {
     CGRect frame = self.frame;
-    frame.origin.x = xs_x;
+    frame.origin.x = x;
     self.frame = frame;
 }
 
-- (CGFloat)xs_x {
+- (CGFloat)x {
     return self.frame.origin.x;
 }
 
-- (void)setXs_y:(CGFloat)xs_y {
+- (void)setY:(CGFloat)y {
     CGRect frame = self.frame;
-    frame.origin.y = xs_y;
+    frame.origin.y = y;
     self.frame = frame;
 }
 
-- (CGFloat)xs_y {
+- (CGFloat)y {
     return self.frame.origin.y;
 }
 
-- (void)setXs_centerX:(CGFloat)xs_centerX {
+- (void)setCenterX:(CGFloat)centerX {
     CGPoint center = self.center;
-    center.x = xs_centerX;
+    center.x = centerX;
     self.center = center;
 }
 
-- (CGFloat)xs_centerX {
+- (CGFloat)centerX {
     return self.center.x;
 }
 
-- (void)setXs_centerY:(CGFloat)xs_centerY {
+- (void)setCenterY:(CGFloat)centerY {
     CGPoint center = self.center;
-    center.y = xs_centerY;
+    center.y = centerY;
     self.center = center;
 }
 
-- (CGFloat)xs_centerY {
+- (CGFloat)centerY {
     return self.center.y;
 }
 
-- (void)setXs_width:(CGFloat)xs_width {
+- (void)setWidth:(CGFloat)width {
     CGRect frame = self.frame;
-    frame.size.width = xs_width;
+    frame.size.width = width;
     self.frame = frame;
 }
 
-- (CGFloat)xs_width {
+- (CGFloat)width {
     return self.frame.size.width;
 }
 
-- (void)setXs_height:(CGFloat)xs_height {
+- (void)setHeight:(CGFloat)height {
     CGRect frame = self.frame;
-    frame.size.height = xs_height;
+    frame.size.height = height;
     self.frame = frame;
 }
 
-- (CGFloat)xs_height {
+- (CGFloat)height {
     return self.frame.size.height;
 }
 
-- (void)setXs_size:(CGSize)xs_size {
+- (void)setSize:(CGSize)size {
     CGRect frame = self.frame;
-    frame.size = xs_size;
+    frame.size = size;
     self.frame = frame;
 }
 
-- (CGSize)xs_size {
+- (CGSize)size {
     return self.frame.size;
 }
 
-- (void)setXs_origin:(CGPoint)xs_origin {
+- (void)setOrigin:(CGPoint)origin {
     CGRect frame = self.frame;
-    frame.origin = xs_origin;
+    frame.origin = origin;
     self.frame = frame;
 }
 
-- (CGPoint)xs_origin {
+- (CGPoint)origin {
     return self.frame.origin;
 }
 

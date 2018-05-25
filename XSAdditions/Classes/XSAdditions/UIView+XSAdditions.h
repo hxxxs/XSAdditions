@@ -10,15 +10,18 @@
 
 @interface UIView (XSAdditions)
 
-@property (nonatomic, assign) CGFloat xs_x;
-@property (nonatomic, assign) CGFloat xs_y;
-@property (nonatomic, assign) CGFloat xs_centerX;
-@property (nonatomic, assign) CGFloat xs_centerY;
-@property (nonatomic, assign) CGFloat xs_width;
-@property (nonatomic, assign) CGFloat xs_height;
-@property (nonatomic, assign) CGSize xs_size;
-@property (nonatomic, assign) CGPoint xs_origin;
-@property (nonatomic, strong) CAShapeLayer *xs_redLayer;
+@property (nonatomic, assign) CGFloat x;
+@property (nonatomic, assign) CGFloat y;
+@property (nonatomic, assign) CGFloat centerX;
+@property (nonatomic, assign) CGFloat centerY;
+@property (nonatomic, assign) CGFloat width;
+@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign) CGPoint origin;
+@property (nonatomic, strong) UIColor *borderColor;
+@property (nonatomic, assign) BOOL masksToBounds;
+@property (nonatomic, assign) CGFloat cornerRadius;
+@property (nonatomic, assign) CGFloat borderWidth;
 
 /**
  返回视图截图
