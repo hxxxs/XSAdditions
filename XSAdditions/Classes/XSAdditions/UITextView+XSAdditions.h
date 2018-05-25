@@ -9,6 +9,9 @@
 
 @interface UITextView (XSAdditions)
 
+/**
+ 占位文字（如果需要设置text需要在设置完text以后重新设置占位文字）
+ */
 @property (nonatomic, copy) NSString *placeholder;
 
 @end

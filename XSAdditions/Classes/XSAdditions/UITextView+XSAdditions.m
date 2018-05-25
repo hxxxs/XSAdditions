@@ -52,6 +52,7 @@ static char *xs_placeholderLabelKey = "xs_placeholderLabelKey";
     self.xs_placeholderLabel.textAlignment = self.textAlignment;
     self.xs_placeholderLabel.font = self.font != nil ? self.font : [self defaultFont];
     [self insertSubview:self.xs_placeholderLabel atIndex:0];
+    [self updatePlaceholder];
 }
 
 - (NSString *)placeholder {
