@@ -33,7 +33,8 @@
 /**
  显示红点
  */
-- (void)xs_showRedDot;
+- (void)xs_showRedDot:(CGFloat)wh;
+- (void)xs_showRedDot:(CGFloat)wh center:(CGPoint)center;
 
 /**
  隐藏红点

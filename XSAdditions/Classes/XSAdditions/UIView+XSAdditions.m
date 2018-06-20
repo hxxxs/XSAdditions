@@ -9,39 +9,27 @@
 #import "UIView+XSAdditions.h"
 #import <objc/runtime.h>
 
-@interface UIView ()
-
-@property (nonatomic, weak) CAShapeLayer *redLayer;
-
-@end
-
 @implementation UIView (XSAdditions)
 
 - (void)xs_hiddenRedDot {
-    
-    if (self.redLayer == self.layer.sublayers.lastObject) {
-        
-        [self.layer.sublayers.lastObject removeFromSuperlayer];
+    for (UIView *v in self.subviews) {
+        if (v.tag == 20180620) {
+            [v removeFromSuperview];
+        }
     }
 }
 
-- (void)xs_showRedDot {
-    
-    if (self.redLayer == self.layer.sublayers.lastObject) {
-        return ;
-    }
-    
-    CAShapeLayer *layer = [[CAShapeLayer alloc] init];
-    layer.fillColor = [UIColor redColor].CGColor;
-    [self.layer addSublayer:layer];
-    self.redLayer = layer;
-    
-    CGFloat wh = MIN(MIN(self.width, self.height) / 2, 10);
-    CGFloat x = self.width - wh / 2;
-    CGFloat y = - wh / 2;
-    CGRect frame = CGRectMake(x, y, wh, wh);
-    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:frame];
-    layer.path = path.CGPath;
+- (void)xs_showRedDot:(CGFloat)wh {
+    [self xs_showRedDot:wh center:CGPointMake(self.width, -wh / 2)];
+}
+
+- (void)xs_showRedDot:(CGFloat)wh center:(CGPoint)center {
+    [self xs_hiddenRedDot];
+    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(center.x, center.y, wh, wh)];
+    v.backgroundColor = [UIColor redColor];
+    v.cornerRadius = wh / 2;
+    v.tag = 20180620;
+    [self addSubview:v];
 }
 
 - (UIViewController*)xs_viewController {
@@ -94,14 +82,6 @@
 
 - (BOOL)masksToBounds {
     return self.layer.masksToBounds;
-}
-
-- (void)setRedLayer:(CAShapeLayer *)redLayer {
-    objc_setAssociatedObject(self, @selector(redLayer), redLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (CAShapeLayer *)redLayer {
-    return objc_getAssociatedObject(self, @selector(redLayer));
 }
 
 - (void)setX:(CGFloat)x {

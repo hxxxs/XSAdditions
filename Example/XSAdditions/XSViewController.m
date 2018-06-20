@@ -35,7 +35,7 @@
 
 
 - (void)clickButton {
-    [_button xs_showRedDot];
+    [_button.titleLabel xs_showRedDot: 8];
 }
 
 - (void)didReceiveMemoryWarning

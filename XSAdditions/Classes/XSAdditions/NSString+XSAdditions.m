@@ -11,6 +11,18 @@
 
 @implementation NSString (XSAdditions)
 
++ (instancetype)timestampConvertString:(NSTimeInterval)timeInterval dateFormat:(NSString *)dateFormat {
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    return [NSString dateConvertString:date dateFormat:dateFormat];
+}
+
++ (instancetype)dateConvertString:(NSDate *)date dateFormat:(NSString *)dateFormat {
+    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+    fmt.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+    fmt.dateFormat = dateFormat;
+    return [fmt stringFromDate:date];
+}
+
 - (BOOL)xs_isRepeat {
     return [self xs_repeatWithCount:self.length];
 }

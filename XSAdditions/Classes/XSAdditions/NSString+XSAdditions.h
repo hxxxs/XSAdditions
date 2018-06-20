@@ -11,6 +11,24 @@
 @interface NSString (XSAdditions)
 
 /**
+ 时间戳转字符串
+ 
+ @param timeInterval 时间戳（单位s）
+ @param dateFormat 时间格式
+ @return 格式对应的字符串
+ */
++ (instancetype)timestampConvertString:(NSTimeInterval)timeInterval dateFormat:(NSString *)dateFormat;
+
+/**
+ 日期转字符串
+ 
+ @param date 日期
+ @param dateFormat 格式
+ @return 格式对应的字符串
+ */
++ (instancetype)dateConvertString:(NSDate *)date dateFormat:(NSString *)dateFormat;
+
+/**
  字符串中字符相同
  */
 - (BOOL)xs_isRepeat;
